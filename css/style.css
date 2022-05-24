@@ -1,19 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 body {
     position: relative;
+    overflow: hidden;
 }
 
-#principal{
+#principal {
     width: 360px;
     height: 740px;
-    background-color: red;
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
+}
+
+#loginImg{
+    position: relative;
+}
+
+#logo{
+    position: relative;
+    left: 100px;
+}
+
+#nomeInput{
+    font-size: 18px;
+    text-align: center;
+    background-color: #dedede;
+    width: 249px;
+    height: 34px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 3px #dedede;
+    padding-left: 10px;
+    position: relative;
+    top: 20px;
+    left: 45px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px 2px;
+}
+
+#senhaInput{
+    font-size: 18px;
+    text-align: center;
+    background-color: #dedede;
+    width: 249px;
+    height: 34px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 3px #dedede;
+    padding-left: 10px;
+    position: relative;
+    top: 40px;
+    left: 45px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px 2px;
+}
+
+#enviarInput{
+    font-size: 18px;
+    width: 118px;
+    height: 34px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background-color: #6ab002;
+    border: solid 3px #6ab002;
+    position: relative;
+    top: 55px;
+    left: 115px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px 2px;
+    transition: transform ease 300ms;
+}
+
+#enviarInput:hover{
+    transform: scale(110%);
+}
+
+#textoLoginNaoTemAcc{
+    color: #646464;
+    position: relative;
+    top: 85px;
+    left: 102px;
+}
+
+#textoLoginRegistrar{
+    color: #5a9403;
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+    left: 126px;
+    transition: transform ease 300ms;
+}
+
+#textoLoginRegistrar:hover{
+    transform: translate(0%,20%);
 }
