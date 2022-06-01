@@ -1,6 +1,10 @@
+//Feed
 const $enviarInput = document.getElementById("enviarInput");
-const $bolinhasMenu = document.getElementById("bolinhasMenu");
-const $bonecaMenu = document.getElementById("bonecaMenu");
+const $bolinhasMenuFeed = document.getElementById("bolinhasMenu");
+const $bonecaMenuFeed = document.getElementById("bonecaMenu");
+//Perfil
+const $bolinhasMenuPerfil = document.getElementById("bolinhasMenuPerfil");
+const $bonecaMenuPerfil = document.getElementById("bonecaMenuPerfil");
 
 /*
 *  Menus
@@ -38,12 +42,24 @@ $enviarInput.addEventListener("click", () => {
     
 });
 
-$bolinhasMenu.addEventListener("click", () => {
+//Feed
+$bolinhasMenuFeed.addEventListener("click", () => {
     $feed.style.display = "block";
     $perfil.style.display = "none";
 });
 
-$bonecaMenu.addEventListener("click", () => {
+$bonecaMenuFeed.addEventListener("click", () => {
+    $feed.style.display = "none";
+    $perfil.style.display = "block";
+});
+
+//Perfil
+$bolinhasMenuPerfil.addEventListener("click", () => {
+    $feed.style.display = "block";
+    $perfil.style.display = "none";
+});
+
+$bonecaMenuPerfil.addEventListener("click", () => {
     $feed.style.display = "none";
     $perfil.style.display = "block";
 });
