@@ -6,20 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duofit</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/Setup.js" defer></script>
 </head>
 <body>
     <div id="principal">
-        <div id="loginImg">
-            <img src="imgs/loginBoneco.png">
+        <!--Login-->
+        <div id="Login">
+            <div id="loginImg">
+                <img src="imgs/loginBoneco.png">
+            </div>
+            <div id="logo">
+                <img src="imgs/duofitLogo.png">
+            </div>
+            <input id="nomeInput" type="text" placeholder="Nome">
+            <input id="senhaInput" type="password" placeholder="Senha">
+            <input id="enviarInput" type="submit" value="Entrar">
+            <h3 id="textoLoginNaoTemAcc">Não tem conta?</h3>
+            <h4 id="textoLoginRegistrar">Registrar-se</h4>
         </div>
-        <div id="logo">
-            <img src="imgs/duofitLogo.png">
+        <!--Feed-->
+        <div id="Feed">
+            <img id="fogoFeed" src="imgs/fogo.png">
+            <h2 id="textoFeed">Feed</h2>
+            <div id="ldFeed" class="linhaDivisoria"></div>
+            <img id="feedTutoFoto" src="imgs/feedTutoFoto.png">
+            <img id="camera" src="imgs/camera.png">
+            <input id="enviarInputFeed" type="submit" value="Enviar">
+            <div id="ldFeedMenu" class="linhaDivisoria"></div>
+            <h3 id="textoVerHistorico">Ver histórico</h3>
+            <div id="menuFeed">
+                <img id="bolinhasMenu" src="imgs/bolinhasMenu.png">
+                <img id="escudoMenu" src="imgs/escudoMenu.png">
+                <img id="bonecaMenu" src="imgs/bonecaMenu.png">
+                <img id="bauMenu" src="imgs/bauMenu.png">
+            </div>
         </div>
-        <input id="nomeInput" type="text" placeholder="Nome">
-        <input id="senhaInput" type="password" placeholder="Senha">
-        <input id="enviarInput" type="submit" value="Entrar">
-        <h3 id="textoLoginNaoTemAcc">Não tem conta?</h3>
-        <h4 id="textoLoginRegistrar">Registrar-se</h4>
+        <!--Perfil-->
+        <div id="Perfil">
+            <img id="fogoPerfil" src="imgs/fogo.png">
+            <h2 id="textoPerfil">Perfil</h2>
+            <img id="configPerfil" src="imgs/configBotao.png">
+            <div id="ldPerfil" class="linhaDivisoria"></div>
+            <img id="imgPerfil" src="imgs/fotoPerfil.png">
+            <h2 id="nomePerfil">Felype C.</h2>
+            <h4 id="classePerfil">Competidor</h4>
+            <h4 id="conquistaTexto">CONQUISTAS</h4>
+            <h4 id="sobreTexto">SOBRE</h4>
+            <div id="ldPerfilConquitasMenuVerde"></div>
+            <div id="ldPerfilConquitasMenu"></div>
+            <div id="conquistas">
+                    <h2 id="conqShapado">Shapado</h4>
+                    <h4 id="conqShapadoTexto">Persista na dieta durante 120 dias.</h4>
+                    <div id="progressoVerde"></div>
+                    <div id="progressoCinza"></div>
+                    <h5 id="numConq1">90/120</h5>
+                <img id="conquista1" src="imgs/conquistaShape.png">
+                    <h2 id="conqShapado2">Platina</h4>
+                    <h4 id="conqShapadoTexto2">Alcance o rank platina.</h4>
+                    <div id="progressoVerde2"></div>
+                    <div id="progressoCinza2"></div>
+                    <h5 id="numConq2">90/120</h5>
+                <img id="conquista2" src="imgs/conquistaShape.png">
+                    <h2 id="conqShapado3">Estético</h4>
+                    <h4 id="conqShapadoTexto3">Ir pro dia T.</h4>
+                    <div id="progressoVerde3"></div>
+                    <div id="progressoCinza3"></div>
+                    <h5 id="numConq3">90/120</h5>
+                <img id="conquista3" src="imgs/conquistaShape.png">
+            </div>
+            <div id="ldPerfilMenu" class="linhaDivisoria"></div>
+            <div id="menuPerfil">
+                <img id="bolinhasMenu" src="imgs/bolinhasMenu.png">
+                <img id="escudoMenu" src="imgs/escudoMenu.png">
+                <img id="bonecaMenu" src="imgs/bonecaMenu.png">
+                <img id="bauMenu" src="imgs/bauMenu.png">
+            </div>
+        </div>
     </div>
 </body>
 </html>

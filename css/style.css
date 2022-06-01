@@ -21,6 +21,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
+    border: solid 1px #939393;
 }
 
 #loginImg{
@@ -103,4 +104,369 @@ body {
 
 #textoLoginRegistrar:hover{
     transform: translate(0%,20%);
+}
+
+#textoFeed{
+    font-weight: 700;
+    color: #939393;
+}
+
+#textoPerfil{
+    font-weight: 700;
+    color: #939393;
+}
+
+#conquistaTexto{
+    cursor: pointer;
+    width: 50px;
+    position: relative;
+    top: -30px;
+    left: 33px;
+    font-weight: 700;
+    color: #79c10d;
+    z-index: 1;
+}
+
+#sobreTexto{
+    cursor: pointer;
+    width: 50px;
+    position: relative;
+    top: -55px;
+    left: 250px;
+    font-weight: 700;
+    color: #939393;
+    z-index: 1;
+}
+
+.linhaDivisoria{
+    width: 360px;
+    height: 1px;
+    background-color: #939393;
+}
+
+#ldPerfilConquitasMenu{
+    width: 360px;
+    height: 3px;
+    background-color: #939393;
+    position: relative;
+    top: -60px;
+}
+
+#ldPerfilConquitasMenuVerde{
+    width: 180px;
+    height: 8px;
+    background-color: #79c10d;
+    position: relative;
+    top: -55px;
+    z-index: 1;
+}
+
+#fogoFeed{
+    position: relative;
+    left: 10px;
+}
+
+#fogoPerfil{
+    position: relative;
+    left: 10px;
+}
+
+#configPerfil{
+    cursor: pointer;
+    position: relative;
+    top: -81px;
+    left: 310px;
+}
+
+#textoFeed{
+    position: relative;
+    left: 155px;
+    top: -40px;
+}
+
+#textoPerfil{
+    position: relative;
+    left: 150px;
+    top: -40px;
+}
+
+#ldFeed{
+    position: relative;
+    top: -35px;
+}
+
+#ldPerfil{
+    position: relative;
+    top: -80px;
+}
+
+#camera{
+    cursor: pointer;
+    position: relative;
+    left: 150px;
+}
+
+#enviarInputFeed{
+    font-size: 18px;
+    width: 118px;
+    height: 34px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background-color: #939393;
+    border: solid 3px #939393;
+    position: relative;
+    top: 55px;
+    left: 52px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px 1px;
+    transition: transform ease 300ms;
+}
+
+#enviarInputFeed:hover{
+    transform: scale(110%);
+}
+
+#ldFeedMenu{
+    position: relative;
+    top: 140px;
+}
+
+#ldPerfilMenu{
+    position: relative;
+    top: 140px;
+}
+
+#menuFeed{
+    position: relative;
+    top: 120px;
+    left: 6px;
+}
+
+#ldPerfilMenu{
+    position: relative;
+    top: -400px
+}
+
+#menuPerfil{
+    position: relative;
+    top: -395px;
+    left: 6px;
+}
+
+#bolinhasMenu{
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+}
+
+#escudoMenu{
+    cursor: pointer;
+    position: relative;
+    left: 53px;
+}
+
+#bonecaMenu{
+    cursor: pointer;
+    position: relative;
+    left: 95px;
+}
+
+#bauMenu{
+    cursor: pointer;
+    position: relative;
+    left: 125px;
+}
+
+#textoVerHistorico{
+    cursor: pointer;
+    color: #646464;
+    position: relative;
+    font-size: 16px;
+    top: 105px;
+    left: 136px;
+}
+
+#imgPerfil{
+    position: relative;
+    left: 136px;
+    top: -50px;
+}
+
+#nomePerfil{
+    font-weight: 700;
+    color: #2e2e2e;
+    position: relative;
+    left: 130px;
+    top: -50px;
+}
+
+#classePerfil{
+    font-size: 13px;
+    color: #646464;
+    position: relative;
+    left: 142px;
+    top: -50px;
+}
+
+#conquistas{
+    position: relative;
+    top: -150px;
+    left: 18px;
+}
+
+#conquista1{
+    position: relative;
+    top: -27px;
+    left: 0px;
+}
+
+#conquista2{
+    position: relative;
+    top: -140px;
+    left: 0px;
+}
+
+#conquista3{
+    position: relative;
+    top: -250px;
+    left: 0px;
+}
+
+#conqShapado{
+    font-weight: 700;
+    position: relative;
+    top: 100px;
+    left: 90px;
+}
+
+#conqShapadoTexto{
+    font-weight: 500;
+    position: relative;
+    top: 100px;
+    left: 92px;
+    color: #646464;
+    font-size: 13px;
+}
+
+#conqShapado2{
+    font-weight: 700;
+    position: relative;
+    top: -15px;
+    left: 92px;
+}
+
+#conqShapadoTexto2{
+    font-weight: 500;
+    position: relative;
+    top: -15px;
+    left: 92px;
+    color: #646464;
+    font-size: 13px;
+}
+
+#conqShapado3{
+    font-weight: 700;
+    position: relative;
+    top: -122px;
+    left: 94px;
+}
+
+#conqShapadoTexto3{
+    font-weight: 500;
+    position: relative;
+    top: -124px;
+    left: 95px;
+    color: #646464;
+    font-size: 13px;
+}
+
+#progressoVerde{
+    width: 95px;
+    height: 25px;
+    background-color: #79c10d;
+    border-radius: 12px;
+    position: relative;
+    top: 125px;
+    left: 90px;
+    z-index: 1;
+}
+
+#progressoCinza{
+    width: 160px;
+    height: 25px;
+    background-color: #b1b1b1;
+    border-radius: 12px;
+    position: relative;
+    top: 100px;
+    left: 90px;
+}
+
+#progressoVerde2{
+    width: 120px;
+    height: 25px;
+    background-color: #79c10d;
+    border-radius: 12px;
+    position: relative;
+    top: 10px;
+    left: 90px;
+    z-index: 1;
+}
+
+#progressoCinza2{
+    width: 160px;
+    height: 25px;
+    background-color: #b1b1b1;
+    border-radius: 12px;
+    position: relative;
+    top: -15px;
+    left: 90px;
+}
+
+#progressoVerde3{
+    width: 160px;
+    height: 25px;
+    background-color: #79c10d;
+    border-radius: 12px;
+    position: relative;
+    top: -97px;
+    left: 90px;
+    z-index: 1;
+}
+
+#progressoCinza3{
+    width: 160px;
+    height: 25px;
+    background-color: #b1b1b1;
+    border-radius: 12px;
+    position: relative;
+    top: -121px;
+    left: 90px;
+}
+
+#numConq1{
+    font-size: 18px;
+    color: #939393;
+    font-weight: 700;
+    position: relative;
+    top: 73px;
+    left: 266px;
+}
+
+#numConq2{
+    font-size: 18px;
+    color: #939393;
+    font-weight: 700;
+    position: relative;
+    top: -40px;
+    left: 266px;
+}
+
+#numConq3{
+    font-size: 18px;
+    color: #939393;
+    font-weight: 700;
+    position: relative;
+    top: -148px;
+    left: 266px;
 }
