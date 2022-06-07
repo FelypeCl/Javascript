@@ -1,3 +1,21 @@
+//Banco de dados
+const firebaseConfig = {
+	apiKey: "AIzaSyD7tP8g94N76FJ_DutKcqVhX7gTL-pvoeU",
+	authDomain: "esp32js.firebaseapp.com",
+	databaseURL: "https://esp32js-default-rtdb.firebaseio.com",
+	projectId: "esp32js",
+	storageBucket: "esp32js.appspot.com",
+	messagingSenderId: "176378445584",
+	appId: "1:176378445584:web:ee698e1bafd7d183172f95",
+	measurementId: "G-K9Q5EYVWH9"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+//Firebase configs
+var database = firebase.database();
+var Led1Status;
+
 //Feed
 const $enviarInput = document.getElementById("enviarInput");
 const $bolinhasMenuFeed = document.getElementById("bolinhasMenu");
@@ -149,6 +167,7 @@ $bauMenuPerfil.addEventListener("click", () => {
 });
 
 $sobreTexto.addEventListener("click", () => {
+    let numeroDeFoco = document.getElementById("numeroDeFoco");
     $conquistas.style.display = "none";
     $sobre.style.display = "block";
     $conquistaTexto.style.color = "#939393";
@@ -156,7 +175,14 @@ $sobreTexto.addEventListener("click", () => {
     $ldPerfilConquitasMenuVerde.style.left = "180px";
     $menuPerfil.style.top = "-180px";
     $ldPerfilMenu.style.top = "-185px";
-
+    database.ref().on("value", function(snap){
+        Led1Status = snap.val().Led1Status;
+        if(Led1Status != ""){
+            numeroDeFoco.innerHTML = Led1Status
+        } else {
+            numeroDeFoco.innerHTML = "0"
+        }
+    });
 });
 
 $conquistaTexto.addEventListener("click", () => {
