@@ -21,7 +21,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
-    /*border: solid 1px #939393;*/
 }
 
 #loginImg{
@@ -161,7 +160,7 @@ body {
     z-index: 1;
 }
 
-#fogoFeed{
+#fogoFeed ,#fogoHistorico{
     position: relative;
     left: 10px;
 }
@@ -182,6 +181,19 @@ body {
     position: relative;
     left: 155px;
     top: -40px;
+}
+
+#textoHistorico{
+    font-weight: 700;
+    color: #939393;
+    position: relative;
+    left: 130px;
+    top: -42px;
+}
+
+#ldHistorico{
+    position: relative;
+    top: -30px;
 }
 
 #textoPerfil{
@@ -227,6 +239,48 @@ body {
     transform: scale(110%);
 }
 
+#Real0{
+    font-size: 18px;
+    width: 118px;
+    height: 34px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background-color: #6ab002;
+    border: solid 3px #6ab002;
+    position: relative;
+    top: 10px;
+    left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px 1px;
+    transition: transform ease 300ms;
+}
+
+#Real0:hover{
+    transform: scale(110%);
+}
+
+#Real9{
+    font-size: 18px;
+    width: 118px;
+    height: 34px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background-color: #6ab002;
+    border: solid 3px #6ab002;
+    position: relative;
+    top: 10px;
+    left: 85px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px 1px;
+    transition: transform ease 300ms;
+}
+
+#Real9:hover{
+    transform: scale(110%);
+}
+
 #ldFeedMenu{
     position: relative;
     top: 140px;
@@ -254,25 +308,45 @@ body {
     left: 6px;
 }
 
-#bolinhasMenu, #bolinhasMenuPerfil{
+#ldDuoFitMenu{
+    position: relative;
+    top: 670px;
+}
+
+#menuDuoFit{
+    position: relative;
+    top: 675px;
+}
+
+#menuHistorico{
+    position: relative;
+    top: 558px;
+}
+
+#ldHistoricoMenu{
+    position: relative;
+    top: 580px;
+}
+
+#bolinhasMenu, #bolinhasMenuPerfil, #bolinhasLigas, #bolinhasDuoFit, #bolinhasHistorico{
     cursor: pointer;
     position: relative;
     left: 15px;
 }
 
-#escudoMenu, #escudoMenuPerfil{
+#escudoMenu, #escudoMenuPerfil, #escudoLigas,#escudoDuoFit, #escudoHistorico{
     cursor: pointer;
     position: relative;
     left: 53px;
 }
 
-#bonecaMenu, #bonecaMenuPerfil{
+#bonecaMenu, #bonecaMenuPerfil, #bonecaLigas,#bonecaDuoFit, #bonecaHistorico{
     cursor: pointer;
     position: relative;
     left: 95px;
 }
 
-#bauMenu, #bauMenuPerfil{
+#bauMenu, #bauMenuPerfil, #bauLigas,#bauDuoFit, #bauHistorico{
     cursor: pointer;
     position: relative;
     left: 125px;
@@ -284,7 +358,18 @@ body {
     position: relative;
     font-size: 16px;
     top: 105px;
-    left: 136px;
+    left: 138px;
+}
+
+#textoEnviarRefeicao{
+    cursor: pointer;
+    color: #878787;
+    position: relative;
+    font-size: 16px;
+    top: 545px;
+    left: 120px;
+    font-weight: 700;
+    visibility: hidden;
 }
 
 #imgPerfil{
@@ -469,4 +554,286 @@ body {
     position: relative;
     top: -148px;
     left: 266px;
+}
+
+#diasDeFoco{
+    border: 4px solid #8d8d8d;
+    border-radius: 10px;
+    padding: 5px;
+    width: 160px;
+    height: 90px;
+    position: relative;
+    left: 10px;
+    top: -20px;
+}
+
+#numeroDeFoco{
+    position: relative;
+    left: 42px;
+    top: -49px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#diasDeFocoTexto{
+    position: relative;
+    top: -55px;
+    left: 45px;
+}
+
+
+#rankAtual{
+    border: 4px solid #8d8d8d;
+    border-radius: 10px;
+    padding: 5px;
+    width: 160px;
+    height: 90px;
+    position: relative;
+    left: 190px;
+    top: -110px;
+}
+
+#rankOuroFoto{
+    position: relative;
+    top: 7px;
+    width: 35px;
+}
+
+#rankAtualTexto{
+    position: relative;
+    left: 42px;
+    top: -49px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#raTexto{
+    position: relative;
+    top: -55px;
+    left: 45px;
+}
+
+#melhorRank{
+    border: 4px solid #8d8d8d;
+    border-radius: 10px;
+    padding: 5px;
+    width: 160px;
+    height: 90px;
+    position: relative;
+    left: 190px;
+    top: -95px;
+}
+
+#melhorRankFoto{
+    position: relative;
+    top: 7px;
+    width: 35px;
+}
+
+#melhorRankTexto{
+    position: relative;
+    left: 42px;
+    top: -49px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#mrTexto{
+    position: relative;
+    top: -55px;
+    left: 45px;
+}
+
+#fitCoins{
+    border: 4px solid #8d8d8d;
+    border-radius: 10px;
+    padding: 5px;
+    width: 160px;
+    height: 90px;
+    position: relative;
+    left: 10px;
+    top: -183px;
+}
+
+#fitCoinsFoto{
+    position: relative;
+    top: 7px;
+    width: 35px;
+}
+
+#fitCoinsQntd{
+    position: relative;
+    left: 42px;
+    top: -33px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#fcTexto{
+    position: relative;
+    top: -40px;
+    left: 45px;
+}
+
+#infos{
+    position: relative;
+    top: -20px;
+}
+
+#ldPerfilInfos{
+    position: relative;
+    top: -200px;
+}
+
+#informacoesAdd{
+    position: relative;
+    top: -200px;
+    left: 12px;
+    color: #646464;
+}
+
+#informacoesAddTexto{
+    position: relative;
+    top: -190px;
+    left: 12px;
+    color: #646464;
+}
+
+#rankOuroLigas{
+    position: relative;
+    top: 15px;
+    left: 125px;
+}
+
+#ligasTextoOuro{
+    font-weight: 700;
+    color: #444444;
+    position: relative;
+    top: 15px;
+    left: 78px;
+    font-size: 32px;
+}
+
+#ligasTexto{
+    text-align: center;
+    font-size: 15px;
+    color: #828282;
+    position: relative;
+    top: 20px;
+}
+
+#ldLigas{
+    position: relative;
+    top: 36px;
+}
+
+#ldLigasMenu{
+    position: relative;
+    top: 428px;
+}
+
+#menuLigas{
+    position: relative;
+    top: 430px;
+}
+
+#ranks{
+    position: absolute;
+}
+
+#rankNumeracao1, #rankNumeracao2, #rankNumeracao3, #rankNumeracao4, #rankNumeracao5{
+    font-size: 25px;
+    color: #79c10d;
+    font-weight: 700;
+    position: relative;
+    top: 8px;
+    left: 12px;
+}
+
+#rankFoto1,#rankFoto2,#rankFoto3, #rankFoto4, #rankFoto5{
+    position: relative;
+    left: 40px;
+    top: -38px;
+}
+
+#rankNome1, #rankNome2, #rankNome3, #rankNome4, #rankNome5{
+    position: relative;
+    top: -86px;
+    left: 110px;
+    font-weight: 700;
+}
+
+#rankFc1, #rankFc2, #rankFc3, #rankFc4, #rankFc5{
+    position: relative;
+    top: -110px;
+    left: 310px;
+    color: #646464;
+    font-weight: 700;
+}
+
+#n1{
+    position: relative;
+    top: 60px;
+}
+
+#n2{
+    position: relative;
+    top: -20px;
+}
+
+#n3{
+    position: relative;
+    top: -100px;
+}
+
+#n4{
+    position: relative;
+    top: -180px;
+}
+
+#n5{
+    position: relative;
+    top: -260px;
+}
+
+#duoFitConteudo{
+    position: absolute;
+}
+
+#duoFitLogoGrande{
+    position: relative;
+    top: 10px;
+    left: 105px;
+}
+
+#duoFitImgLegal{
+    position: relative;
+    top: 20px;
+    left: -10px;
+}
+
+#duoFitPlanos{
+    width: 340px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#refeicoes {
+    position: absolute;
+}
+
+#refeicao1{
+    position: relative;
+    left: 4px;
+    cursor: pointer;
+    width: 350px;
+    top: -20px;
+}
+
+#refeicaoFeedBack{
+    position: relative;
+    left: 4px;
+    width: 350px;
+    top: -20px;
 }
